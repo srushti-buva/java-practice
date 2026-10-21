@@ -1,27 +1,28 @@
-package com.tka.employee;
+package com.tka.student;
 
 public class MainClass {
-	 int empId;
-	    String empName;
-	    String department;
-	    double salary;
+	  public static void main(String[] args) {
 
-	    public void work() {
-	        System.out.println("Employee is working");
+	        Student s1 = new Student();
+
+	        s1.studentName = "Srushti";
+	        s1.rollNo = 101;
+	        s1.department = "Computer Engineering";
+	        s1.percentage = 80.3;
+
+	        s1.display();
+
+	        System.out.println("----------------------");
+
+	        Student s2 = new Student();
+
+	        s2.studentName = "Priya";
+	        s2.rollNo = 102;
+	        s2.department = "IT";
+	        s2.percentage = 85.5;
+
+	        s2.display();
 	    }
+	}
 
-	    public void attendMeeting() {
-	        System.out.println("Employee is attending meeting");
-	    }
 
-	    public void display() {
-	        System.out.println("Employee ID --> " + empId);
-	        System.out.println("Employee Name --> " + empName);
-	        System.out.println("Department --> " + department);
-	        System.out.println("Salary --> " + salary);
-
-	        work();
-	        attendMeeting();
-	    }
-
-}
