@@ -6,95 +6,48 @@ public class MainClass {
 
         Demo d = new Demo();
 
-        // 1. Addition
+        // Type 1: No Argument, No Return
         d.myMethod();
 
-        // 2. Square
-        d.myMethod(5);
-
-        // 3. Addition of Two Numbers
+        // Type 2: Argument, No Return
         d.myMethod(10, 20);
+        d.myMethod(10.5, 5.5);
+        d.myMethod('A');
+        d.myMethod(true);
+        d.myMethod(100L);
+        d.myMethod(2.5f);
+        d.myMethod("Java");
+        d.myMethod(5);
+        d.myMethod(1, 2, 3);
+        d.myMethod('A', 'B');
+        d.myMethod(true, false);
+        d.myMethod(2.0f, 3.0f);
+        d.myMethod(10L, 20L);
+        d.myMethod("Age", 22);
+        d.myMethod(10, 'B');
 
-        // 4. Square using double
-        System.out.println(d.myMethod(5.5));
+        // Type 3: No Argument, With Return
+        System.out.println(d.myCharMethod());
 
-        // 5. Addition of Three Numbers
-        d.myMethod(10, 20, 30);
+        // Type 4: Argument, With Return
+        System.out.println(d.myMethod(1, 2, 3, 4));
+        System.out.println(d.myMethod(10.0));
+        System.out.println(d.myBooleanMethod(false));
+        System.out.println(d.myMethod(100L, 2, 3));
+        System.out.println(d.myFloatMethod(8.0f));
+        System.out.println(d.myMethod("Core ", "Java"));
+        System.out.println(d.myMethod(1, 2, 3, 4, 5));
+        System.out.println(d.myMethod(10, 'A', 20));
+        System.out.println(d.myMethod(1.5, 2.5, 3.5));
 
-        // 6. Square using float
-        System.out.println(d.myMethod(4.5f));
+        // Different method name to avoid duplicate signature
+        System.out.println(d.myCheck(10, 10));
 
-        // 7. Square using long
-        System.out.println(d.myMethod(10L));
-
-        // 8. Square using short
-        System.out.println(d.myMethod((short) 5));
-
-        // 9. Addition of double Values
-        System.out.println(d.myMethod(10.5, 20.5));
-
-        // 10. Multiplication
-        System.out.println(d.myMethod(2, 3, 4, 5));
-
-        // 11. Factorial
-        System.out.println(d.myMethod('F', 5));
-
-        // 12. Sum of Natural Numbers
-        System.out.println(d.myMethod(true, 10));
-
-        // 13. Even or Odd
-        System.out.println(d.myMethod("Even", 8));
-
-        // 14. Reverse Number
-        System.out.println(d.myMethod("Reverse", 1234L));
-
-        // 15. Sum of Digits
-        System.out.println(d.myMethod("Sum", 1234, true));
-
-        // 16. Greatest of Two Numbers
-        System.out.println(d.myMethod((byte) 10, (byte) 20));
-
-        // 17. Greatest of Three Numbers
-        System.out.println(d.myMethod(10, 25.5, 20));
-
-        // 18. Rectangle Area
-        System.out.println(d.myMethod("Rectangle", 10, 5));
-
-        // 19. Simple Interest
-        System.out.println(d.myMethod(1000.0, 5.0, 2.0));
-
-        // 20. Celsius to Fahrenheit
-        System.out.println(d.myMethod("Temperature", 25.0));
-
-        // 21. Prime Number
-        System.out.println(d.myMethod(7, true));
-
-        // 22. Palindrome Number
-        System.out.println(d.myMethod(121, 'P'));
-
-        // 23. Power
-        System.out.println(d.myMethod(2, 3, true));
-
-        // 24. Leap Year
-        System.out.println(d.myMethod(2024, "Year"));
-
-        // 25. Percentage
-        System.out.println(d.myMethod(80, 100, '%'));
-
-        // 26. Swap Two Numbers
-        d.myMethod(10, 20, false, 'S');
-
-        // 27. Minimum of Three Numbers
-        System.out.println(d.myMethod(10.0, 5.0, 8.0, true));
-
-        // 28. Circle Area
-        System.out.println(d.myMethod('C', 7.0));
-
-        // 29. Fibonacci Series
-        d.myMethod("Fibonacci", 10, 'F');
-
-        // 30. Vowel Check
-        System.out.println(d.myMethod('a'));
+        System.out.println(d.myMethod(2L, 3L, 4L));
+        System.out.println(d.myMethod(1.0f, 2.0f, 3.0f));
+        System.out.println(d.myMethod('A', 22, "Java"));
     }
 }
+
+
 
