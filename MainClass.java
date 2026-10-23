@@ -1,28 +1,29 @@
-package com.tka.student;
+package com.tka.hospital;
 
 public class MainClass {
-	  public static void main(String[] args) {
+	public static void main(String[] args) {
 
-	        Student s1 = new Student();
+        Hospital h1 = new Hospital();
 
-	        s1.studentName = "Srushti";
-	        s1.rollNo = 101;
-	        s1.department = "Computer Engineering";
-	        s1.percentage = 80.3;
+        h1.hospitalName = "Ruby Hall Clinic";
+        h1.location = "Pune";
+        h1.totalDoctors = 100;
+        h1.totalBeds = 500;
+        h1.department = "Cardiology";
 
-	        s1.display();
+        h1.display();
 
-	        System.out.println("----------------------");
+        System.out.println("--------------------------------");
 
-	        Student s2 = new Student();
+        Hospital h2 = new Hospital();
 
-	        s2.studentName = "Priya";
-	        s2.rollNo = 102;
-	        s2.department = "IT";
-	        s2.percentage = 85.5;
+        h2.hospitalName = "City Hospital";
+        h2.location = "Kolhapur";
+        h2.totalDoctors = 50;
+        h2.totalBeds = 200;
+        h2.department = "Orthopedics";
 
-	        s2.display();
-	    }
-	}
+        h2.display();
+    }
 
-
+}
