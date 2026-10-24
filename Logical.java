@@ -5,6 +5,10 @@ public class Logical {
 		int age = 10;
 		int marks = 40;
 		boolean  result = (age >= 10 && marks >= 10 || !(marks < 10));
+		
+		//                         true && true ||true
+		//                         true && true
+		//                         true
 		System.out.println(result);
 		boolean outcome =((marks >= 10) || age != 10 || !(age == 10));
 		System.out.println(outcome);
