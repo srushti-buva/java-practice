@@ -1,12 +1,9 @@
-package com.tka;
+package com.tka.relational;
 
 public class Divisible_By_Five {
-	public static void main(String args[]) {
-		for(int i = 1;i<=50;i++) {
-			if(i % 5 ==0) {
-				System.out.println(i);
-			}
-		}
+	public static void main(String[] args) {
+		int num = 40;
+		System.out.println(num % 5 == 0);
 	}
 
 }
