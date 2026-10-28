@@ -1,53 +1,62 @@
-package com.tka;
+package method_types;
 
 public class MainClass {
+	public static void main(String args[]) {
+		Method_Question obj = new Method_Question();
+		
+		
+		// Type 1 : No Argument,No Return Value
+		System.out.println("=== Type 1 ===");
+		obj.checkEvenOdd();
+		obj.PrintNumber();
+		obj.multiplication();
+		
+		
+		
+		//Type 2 : Argument, No Return Value
+		System.out.println("\n=== Type 2 ===");
+		obj.checkNumber(-5);
+		obj.factorial(5);
+		
+		
+		
+		//Type 3: No Argument ,with Return value
+		System.out.println("\n===== Type 3");
+		int addResult = obj.addition();
+		System.out.println("Addition: "+ addResult);
+		
+		int squareResult=obj.square();
+		System.out.println("Square: "+squareResult);
+		
+		System.out.println("Number: "+obj.getNumber());
+		
+		
+		
+		//Type 4 : Argument,With Return Value;
+	    System.out.println("\n==== Type 4");
+	    int maxResult = obj.maximum(10, 20);
+	    System.out.println("Maximum: "+maxResult);
+	    
+	    int sumResult = obj.sum(10);
+	    System.out.println("Sum: "+sumResult);
+	    
+	    long factResult = obj.calculateFactorial(5);
+	    
+	    if(factResult == -1) {
+	    	System.out.println("Invalid Factorial Input");
+	    }else {
+	    	System.out.println("Factorial: "+ factResult);
+	    }
+	    
+	    boolean result = obj.isPalindrome(121);
+	    System.out.println("Palindrome: "+ result);
+	
+		
+	    int areaResult = obj.area(10,5);
+	    System.out.println("Rectangle Area: "+ areaResult);
+		
+		
+		
+	}
 
-    public static void main(String[] args) {
-
-        Demo d = new Demo();
-
-        // Type 1: No Argument, No Return
-        d.myMethod();
-
-        // Type 2: Argument, No Return
-        d.myMethod(10, 20);
-        d.myMethod(10.5, 5.5);
-        d.myMethod('A');
-        d.myMethod(true);
-        d.myMethod(100L);
-        d.myMethod(2.5f);
-        d.myMethod("Java");
-        d.myMethod(5);
-        d.myMethod(1, 2, 3);
-        d.myMethod('A', 'B');
-        d.myMethod(true, false);
-        d.myMethod(2.0f, 3.0f);
-        d.myMethod(10L, 20L);
-        d.myMethod("Age", 22);
-        d.myMethod(10, 'B');
-
-        // Type 3: No Argument, With Return
-        System.out.println(d.myCharMethod());
-
-        // Type 4: Argument, With Return
-        System.out.println(d.myMethod(1, 2, 3, 4));
-        System.out.println(d.myMethod(10.0));
-        System.out.println(d.myBooleanMethod(false));
-        System.out.println(d.myMethod(100L, 2, 3));
-        System.out.println(d.myFloatMethod(8.0f));
-        System.out.println(d.myMethod("Core ", "Java"));
-        System.out.println(d.myMethod(1, 2, 3, 4, 5));
-        System.out.println(d.myMethod(10, 'A', 20));
-        System.out.println(d.myMethod(1.5, 2.5, 3.5));
-
-        // Different method name to avoid duplicate signature
-        System.out.println(d.myCheck(10, 10));
-
-        System.out.println(d.myMethod(2L, 3L, 4L));
-        System.out.println(d.myMethod(1.0f, 2.0f, 3.0f));
-        System.out.println(d.myMethod('A', 22, "Java"));
-    }
 }
-
-
-
