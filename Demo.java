@@ -1,130 +1,208 @@
-
 package com.tka;
 
 public class Demo {
 
-    // Type 1: No Argument, No Return Type
+    // 1. Addition - No Parameter, No Return
     public void myMethod() {
-        System.out.println("No argument, no return");
+        int a = 10, b = 20;
+        System.out.println( "The Addition of a and b =" +(a + b));
     }
 
-    // Type 2: Argument, No Return Type
+    // 2. Square
+    public void myMethod(int a) {
+        System.out.println(a * a);
+    }
+
+    // 3. Addition of Two Numbers
     public void myMethod(int a, int b) {
-        System.out.println("Addition: " + (a + b));
+        System.out.println(a + b);
     }
 
-    public void myMethod(double a, double b) {
-        System.out.println("Addition: " + (a + b));
+    // 4. Square using double
+    public int myMethod(double a) {
+        return (int) (a * a);
     }
 
-    public void myMethod(char ch) {
-        System.out.println("Character: " + ch);
-    }
-
-    public void myMethod(boolean status) {
-        System.out.println("Boolean: " + status);
-    }
-
-    public void myMethod(long number) {
-        System.out.println("Long: " + number);
-    }
-
-    public void myMethod(float number) {
-        System.out.println("Float: " + number);
-    }
-
-    public void myMethod(String name) {
-        System.out.println("String: " + name);
-    }
-
-    public void myMethod(int number) {
-        System.out.println("Integer: " + number);
-    }
-
+    // 5. Addition of Three Numbers
     public void myMethod(int a, int b, int c) {
-        System.out.println("Sum: " + (a + b + c));
+        System.out.println(a + b + c);
     }
 
-    public void myMethod(char a, char b) {
-        System.out.println("Characters: " + a + " " + b);
+    // 6. Square using float
+    public double myMethod(float a) {
+        return a * a;
     }
 
-    public void myMethod(boolean a, boolean b) {
-        System.out.println("Booleans: " + a + " " + b);
+    // 7. Square using long
+    public long myMethod(long n) {
+        return n * n;
     }
 
-    public void myMethod(float a, float b) {
-        System.out.println("Float sum: " + (a + b));
+    // 8. Square using short
+    public int myMethod(short n) {
+        return n * n;
     }
 
-    public void myMethod(long a, long b) {
-        System.out.println("Long sum: " + (a + b));
-    }
-
-    public void myMethod(String name, int age) {
-        System.out.println(name + ": " + age);
-    }
-
-    public void myMethod(int number, char ch) {
-        System.out.println("Number: " + number + ", Character: " + ch);
-    }
-
-    // Type 3 and Type 4: Methods With Return Type
-
-    public int myMethod(int a, int b, int c, int d) {
-        return a + b + c + d;
-    }
-
-    public double myMethod(double number) {
-        return number * number;
-    }
-
-    public char myCharMethod() {
-        return 'A';
-    }
-
-    public boolean myBooleanMethod(boolean value) {
-        return !value;
-    }
-
-    public long myMethod(long a, int b, int c) {
-        return a + b + c;
-    }
-
-    public float myFloatMethod(float number) {
-        return number * 2;
-    }
-
-    public String myMethod(String a, String b) {
+    // 9. Addition of Two double Values
+    public double myMethod(double a, double b) {
         return a + b;
     }
 
-    public int myMethod(int a, int b, int c, int d, int e) {
-        return a + b + c + d + e;
+    // 10. Multiplication of Four Numbers
+    public int myMethod(int a, int b, int c, int d) {
+        return a * b * c * d;
     }
 
-    public int myMethod(int a, char ch, int b) {
-        return a + ch + b;
+    // 11. Factorial
+    public int myMethod(char ch, int n) {
+        int fact = 1;
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
+        }
+        return fact;
     }
 
-    public double myMethod(double a, double b, double c) {
-        return a + b + c;
+    // 12. Sum of Natural Numbers
+    public int myMethod(boolean flag, int n) {
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {
+            sum += i;
+        }
+        return sum;
     }
 
-    // Different name because myMethod(int, int) already exists
-    public boolean myCheck(int a, int b) {
-        return a == b;
+    // 13. Even or Odd
+    public boolean myMethod(String text, int n) {
+        return n % 2 == 0;
     }
 
-    public long myMethod(long a, long b, long c) {
-        return a + b + c;
+    // 14. Reverse Number
+    public long myMethod(String text, long n) {
+        long rev = 0;
+        while (n != 0) {
+            rev = rev * 10 + n % 10;
+            n /= 10;
+        }
+        return rev;
     }
 
-    public float myMethod(float a, float b, float c) {
-        return a + b + c;
+    // 15. Sum of Digits
+    public int myMethod(String text, int n, boolean flag) {
+        int sum = 0;
+        n = Math.abs(n);
+        while (n > 0) {
+            sum += n % 10;
+            n /= 10;
+        }
+        return sum;
     }
 
-    public String myMethod(char ch, int number, String text) {
-        return ch + " " + number + " " + text;
+    // 16. Greatest of Two Numbers
+    public int myMethod(byte a, byte b) {
+        return a > b ? a : b;
+    }
+
+    // 17. Greatest of Three Numbers
+    public double myMethod(int a, double b, int c) {
+        return Math.max(a, Math.max(b, c));
+    }
+
+    // 18. Rectangle Area
+    public int myMethod(String text, int length, int width) {
+        return length * width;
+    }
+
+    // 19. Simple Interest
+    public double myMethod(double p, double r, double t) {
+        return p * r * t / 100;
+    }
+
+    // 20. Celsius to Fahrenheit
+    public double myMethod(String text, double c) {
+        return c * 9 / 5 + 32;
+    }
+
+    // 21. Prime Number
+    public boolean myMethod(int n, boolean primeCheck) {
+        if (n < 2) {
+            return false;
+        }
+        for (int i = 2; i < n; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // 22. Palindrome Number
+    public boolean myMethod(int n, char check) {
+        if (n < 0) {
+            return false;
+        }
+        int original = n;
+        int rev = 0;
+        while (n > 0) {
+            rev = rev * 10 + n % 10;
+            n /= 10;
+        }
+        return original == rev;
+    }
+
+    // 23. Power
+    public int myMethod(int base, int exponent, boolean power) {
+        int result = 1;
+        for (int i = 1; i <= exponent; i++) {
+            result *= base;
+        }
+        return result;
+    }
+
+    // 24. Leap Year
+    public boolean myMethod(int year, String text) {
+        return year % 400 == 0 ||
+               (year % 4 == 0 && year % 100 != 0);
+    }
+
+    // 25. Percentage
+    public double myMethod(int obtained, int total, char percent) {
+        return obtained * 100.0 / total;
+    }
+
+    // 26. Swap Two Numbers
+    public void myMethod(int a, int b, boolean swap, char ch) {
+        int temp = a;
+        a = b;
+        b = temp;
+        System.out.println(a + " " + b);
+    }
+
+    // 27. Minimum of Three Numbers
+    public double myMethod(double a, double b, double c, boolean minimum) {
+        return Math.min(a, Math.min(b, c));
+    }
+
+    // 28. Circle Area
+    public double myMethod(char ch, double radius) {
+        return 3.14 * radius * radius;
+    }
+
+    // 29. Fibonacci Series
+    public void myMethod(String text, int n, char fib) {
+        int a = 0, b = 1;
+        for (int i = 1; i <= n; i++) {
+            System.out.print(a + " ");
+            int c = a + b;
+            a = b;
+            b = c;
+        }
+        System.out.println();
+    }
+
+    // 30. Vowel Check
+    public boolean myMethod(char ch) {
+        ch = Character.toLowerCase(ch);
+        return ch == 'a' || ch == 'e' || ch == 'i'
+                || ch == 'o' || ch == 'u';
     }
 }
