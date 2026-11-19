@@ -1,0 +1,596 @@
+Level 1: Basic Inheritance
+1. Single Inheritance – Animal and Dog
+- Create an Animal class with eat() and sleep() methods.
+- Create a Dog class that inherits Animal.
+- Add a bark() method in Dog.
+- Call all three methods using a Dog object.
+
+
+
+
+public class Animal{
+  void eat(){
+    System.out.println("Animal is eating");
+  }
+ void sleep(){
+   System.out.println("Animal is Sleeping");
+ }
+
+}
+
+
+public class Dog extends Animal{
+  void bark(){
+   System.out.println("Dog is Barking");
+  }
+}
+
+
+public class MainClass{
+   public static void main(String args[]){
+   Dog d = new Dog();
+   d.eat();
+   d.sleep();
+   d.bark();
+  }
+}
+    
+  
+
+
+
+
+
+2. Employee and Manager
+- Create an Employee class with id, name and salary.
+- Create a Manager class that inherits Employee.
+- Add a department variable.
+- Display all employee and manager details.
+
+
+public class Employee{
+   int id ;
+   String name  ;
+   double salary ;
+   void displayEmployee(){ 
+    System.out.println("Employee Id :" +id);
+    System.out.println("Employee name :" +id);
+    System.out.println("Employee salary :" +id);
+    }
+}
+
+
+
+public class Manager extends Employee{
+    String department;
+    void displayManager(){
+      System.out.println("Manager Department :"+ department);
+    }
+}
+
+public class MainClass{
+   public static void main(String args[]){
+   Manager m = new Manager();
+   //Employee Details
+   m.id = 101;
+   m.name="Srushti";
+   m.salary=50000;
+  //Manager Details
+   m.department="IT";
+   System.out.println("Employee Details");
+   m.displayEmployee();
+   m.displayManager();
+   
+
+
+
+
+
+
+3. Vehicle and Car
+- Create a Vehicle class with brand and speed.
+- Create a Car class that inherits Vehicle.
+- Add fuelType.
+- Display all details.
+
+
+
+
+public class Vehicle {
+   String brand;
+   int speed;
+  void displayVehicle(){
+    System.out.println("Vehicle Brand: "+brand);
+    System.out.println("Vehicle Speed: "+speed);
+  }
+}
+
+public class Car extends Vehicle{
+   String fuelType;
+   void displayCar(){
+    System.out.println("Car FuelType : "+fuelType);
+   }
+}
+
+
+public class MainClass{
+  public static void main(String args[]){
+   Car c = new Car();
+   //Veicle Details
+   c.brand = "Toyota";
+   c.spped =180;
+  //Car Details
+   c.fuelType = "Petrol";
+   System.out.println("Vehicle Details");
+   c.displayVehicle();
+   System.out.println("Car Details");
+   c.displayCar();
+  
+
+
+   
+4. Person and Student
+- Create a Person class with name and age.
+- Create a Student class that inherits Person.
+- Add rollNo and marks.
+- Display complete student information.
+
+
+
+public class Person{
+  String name ;
+  int age ;
+  void displayPerson(){
+    System.out.println("Person name :"+name);
+    System.out.println("Person age :"+age);
+ }
+}
+
+public class Student extends Person(){
+   int rollNo;
+   int marks;
+   void displayStudent(){
+     System.out.println("Student roll no :"+rollNo);
+     System.out.println("Student marks :"+marks);
+  }
+}
+
+
+public class MainClass{
+   public static main(String args[]){
+   Student s = new Student();
+   //Person Details
+   s.name = "Srushti";
+   s.age = 20;
+  //Student Details
+   s.rollNo = 12;
+   s.marks= 20;
+   System.out.println("Person Details");
+   s.displayPerson();
+   System.out.println("Student Details");
+   s.displayStudent();
+ }
+}
+  
+     
+
+
+
+
+5. Bank Account
+- Create an Account class with accountNumber and balance.
+- Create a SavingsAccount class that inherits Account.
+- Add interestRate.
+- Display account details.
+
+
+
+
+public class Account{
+   long accountNumber;
+   double balance;
+   void displayAccount(){
+     System.out.println("Account Number : "+accountNumber);
+     System.out.println("Account Balance :"+balance);
+   }
+}
+
+
+public class SavingAccount extends Account{
+    int interestRate;
+    void displaySavingAccount(){
+       System.out.println("Interest Rate " + "%");
+   }
+}
+
+
+
+public class MainClass{
+   public static void main(String args[]){
+   SavingAccount s = new SavingAccount;
+   //Account Details
+   s.accountNumber =1234567;
+   s.balance = 50000;
+  //SavingAccount Details
+   s.interestRate = 5.5;
+  System.out.println("Account Details");
+  s.displayAccount();
+  System.out.println("Saving Account Details");
+  s.displaySavingAccount();
+ }
+}
+
+
+
+
+
+
+
+
+Level 2: Multilevel Inheritance
+6. Create three classes: Grandfather, Father and Son.
+- Grandfather has a house() method.
+- Father has a car() method.
+- Son has a bike() method.
+- Access all methods using a Son object.
+
+public class Grandfather(){
+   void house(){
+    System.out.println("Grandfather has a house");
+  }
+}
+ 
+
+public class Father extends Grandfather(){
+   void car(){
+    System.out.println("Father has a Car");
+  }
+}
+
+
+public class Son extends Father(){
+  void bike(){
+    System.out.println("Son has a bike Method");
+ }
+}
+
+
+public class MainClass {
+   public ststic void main(String args[]){
+    Son s = new Son();
+    s.house();
+    s.car();
+    s.bike();
+  }
+}
+ 
+    
+    
+7. Create Person, Employee and Manager classes.
+- Person: name and age.
+- Employee: employeeId and salary.
+- Manager: department and bonus.
+- Display all details using a Manager object.
+
+
+public class Person(){
+   String name;
+   String age ;
+   void displayPerson(){
+    System.out.println("Person name :"+name);
+    System.out.println("Person age :"+age);
+ }
+}
+
+
+public class Employee extends Person(){
+   int employeeId;
+   double salary;
+   void displayEmployeeDetails(){
+      System.out.println("Employee Id :"+employeeId);
+      System.out.println("Employee Salary :"+salary);
+   }
+}
+
+
+public class Manager extends Employee{
+     String department;
+     int bonous;
+     void displayManager(){
+       System.out.println("Manager Department:"+department);
+       System.out.println("Manager Bonus :"+bonus);
+    
+     }
+}
+
+public class MainClass{
+   public static void main(String args[]){
+   Manager m = new Manager();
+   //Person Details
+   m.name= "Srushti";
+   m.age=12;
+   //Employee Details
+   m.employeeId = 101;
+   m.salary=50000;
+   //Manager Details
+   m.department="IT";
+   m.bonus=50000;
+ }
+}
+    
+     
+
+8. Create Animal, Mammal and Dog classes.
+- Animal: eat().
+- Mammal: walk().
+- Dog: bark().
+- Call all methods using a Dog object.
+
+
+
+
+
+9. Create College, Department and Student classes.
+- College: collegeName.
+- Department: departmentName.
+- Student: studentName and rollNo.
+- Display all information.
+10. Create Product, ElectronicProduct and Mobile classes.
+- Product: productId and price.
+- ElectronicProduct: warranty.
+- Mobile: brand and RAM.
+- Display complete product details.
+
+
+
+
+
+
+
+Level 3: Hierarchical Inheritance
+11. Create a Shape parent class.
+- Create Circle and Rectangle child classes.
+- Circle calculates area using radius.
+- Rectangle calculates area using length and width.
+
+
+public class Shape(){
+   void display(){
+    System.out.println("Calculating Area Of Shape");
+}
+
+
+
+public class Circle extends Shape{
+  double radius;
+  void calculateArea(){
+   double area = 3.14 * radius * radius;
+   System.out.println("Circle Radius :"+radius);
+   System.out.println("Circle Area :"+area);
+ }
+}
+
+
+public class Rectangle extends Shape(){
+   double length;
+   double width;
+   void calculateArea(){
+    double area = length* width;
+     System.out.println("Rectangle Length: " + length);
+     System.out.println("Rectangle Width: " + width);
+     System.out.println("Rectangle Area: " + area);
+  }
+}
+    
+public class MainClass{
+  public static void main(String args[]){
+   Circle c = new Cirlce();
+   c.radius=3;
+   System.out.println("----- Circle Details -----");
+   c.display();
+   c.calculateArea();
+   Rectangle r = new Rectangle ():
+   r.length=10;
+   r.width=20;
+   System.out.println("\n----- Rectangle Details -----");
+   r.display();
+   r.calculateArea();
+  }
+}
+   
+    
+    
+12. Create a Vehicle parent class.
+- Create Car, Bike and Bus child classes.
+- Each child should have its own method.
+- Call common and individual methods.
+
+
+public class Vehicle{
+  String brand;
+  int speed;
+  void start(){
+   System.out.println("Vehicle is Staring ")
+  }
+  void displayVehicle(){
+   System.out.println("Vehicle Brand is :"+brand);
+   System.out.println("Vehicle Speed is :"+speed);
+ }
+}
+
+
+public class Car extends Vehicle{
+  void fourWheels(){
+   System.out.println("Car has Four Wheels ");
+ }
+}
+
+
+public class Bike extends Vehicle{
+   void twoWheels(){
+    System.out.println("Bike has Two Wheels");
+  }
+}
+
+
+public class Bus extends Vehicle{
+    void passengerCapcity(){
+      System.out.println("Bus can carry 50 Passenger");
+    }
+}
+
+
+public class MainClass{
+   public static void main(String args[]){
+     Car c = new Car();
+     c.brand= "Toyota";
+     c.speed=80;
+     System.out.println("----- Car Details -----");
+     c.displayVehicle();
+     c.start();
+     c.fourWheels();
+     Bike b = new Bike();
+     b.brand="Honda";
+     b.speed=120;
+     System.out.println("----- Bike Details -----");
+     b.displayVehicle();
+     b.start();
+     b.twoWheels();
+     Bus b1 = new Bus();
+     b1.brand = "Tata";
+     b1.speed=100;
+     System.out.println("----- Bus Details -----");
+     b1.displayVehicle();
+     b1.start();
+     b1.passengerCapcity();
+   }
+} 
+     
+    
+   
+   
+13. Create an Employee parent class.
+- Create Developer and Tester child classes.
+- Both have different job roles.
+- Display employee details.
+ 
+
+
+public class Employee{
+   int employeeId;
+   String name;
+   double salary;
+   Employee(int employeeId,String name,double salary){
+   this.employeeId= employeeId;
+   this.name = name;
+   this.salary=salary;
+   }
+   void displayDetails(){
+    System.out.println("Employee Details");
+    System.out.println("Employee Name :"+name);
+    System.out.println("Employee Id :"+id);
+    System.out.println("Employee salary:"+salary);
+  }
+}
+
+
+
+public class Developer extends Employee{
+     String jobRoles;
+     Developer(int employeeId,String name,double salary,String jobRoles){
+     super(int employeeId,String name,double salary);
+     this.jobRoles=jobRoles;
+     void displayDeveloper(){
+      void displayDetails();
+      System.out.println("Job Roles :"+jobRoles);
+    }
+}
+
+
+
+public class Tester extends Employee{
+    String jobRoles;
+    Tester((int employeeId,String name,double salary,String jobRoles){
+    super(int employeeId,String name,double salary);
+    this.jobRoles=jobRoles;
+    void displayTester(){   
+      void displayDetails();
+      System.out.println("Job Roles :"+jobRoles);
+   }
+}
+
+
+
+public class MainClass{
+   public Static void main(String args[]){
+    Developer d = new Developer(101,"Rahul",5000,"Java Developer");
+    Tester t = new Tester(102,"Priya",6000,"Software Tester");
+    System.out.println("---- Developer Details ----")
+    d.displayDeveloper();
+    t.displayTester();
+    }
+}
+    
+
+  
+ 14. Create a Bank parent class.
+- Create SBI, HDFC and ICICI child classes.
+- Each bank should display its own interest rate.
+
+
+public class Bank{
+   void displayInterestRate(){
+     System.out.println("Bank Interest Rate");
+   }
+}
+
+
+public class SBI extends Bank{
+   void displayInterestRate(){
+    System.out.println("SBI interest Rate : 6.5 %");
+   }
+}
+
+
+public class HDFC extends Bank{
+   void displayInterestRate(){
+    System.out.println("HDFC intertest Rate : 7.7%");
+   }
+}
+
+
+public class ICICI extends Bank{
+   void displayInterestRate(){
+    System.out.println("ICICI interest Rate : 8.8%");
+   }
+}
+
+
+public class MainClass{
+   public static void main(String args[]){
+   SBI s = new SBI ();
+   System.out.println("----- SBI Bank -----");
+   s.displayinterestRate();
+   System.out,println();
+   HDFC h = new HDFC();
+   System.out.println("----- HDFC Bank -----");
+   h.displayinterestRate();
+   System.out.println();
+   ICICI i = new ICICI();
+   System.out.println("----- ICICI Bank -----");
+   i.displayinterestRate();
+   }
+}
+
+
+
+
+
+
+
+
+15. Create a Person parent class.
+- Create Student and Teacher child classes.
+- Student has marks.
+- Teacher has subject and salary.
+- Display their respective details.
