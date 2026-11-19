@@ -1,0 +1,714 @@
+JAVA CORE PROGRAMMING — TECHNICAL QUESTIONS & ANSWERS   ----- Srushti Rajaram Buva. -1343
+==========================================================
+
+1. Which keyword is used to create an instance of a class in Java?
+   A) class
+   B) new
+   C) object
+   D) create
+   Answer: B) new
+
+2. What is a class in Java?
+   A) A primitive data type
+   B) A blueprint/template for objects
+   C) An instance of memory
+   D) A method execution block
+   Answer: B) A blueprint/template for objects
+
+3. Which memory area stores objects created using the new  operator?
+   A) Stack Memory
+   B) Heap Memory
+   C) Method Area
+   D) PC Register
+   Answer: B) Heap Memory
+
+4. What is the default value of an uninitialized object reference inside a class?
+   A) 0
+   B) ""
+   C) null
+   D) undefined
+   Answer: C) null
+
+5. How many objects of a class can be created in a single program?
+   A) Only one
+   B) Up to 256
+   C) Unlimited (subject to memory)
+   D) Defined by class modifier
+   Answer: C) Unlimited (subject to memory)
+
+6. Which of the following best describes an object's state?
+   A) Its defined methods
+   B) Values of its attributes/fields
+   C) Its access modifier
+   D) Its memory address
+   Answer: B) Values of its attributes/fields
+
+7. Which of the following is TRUE about anonymous objects?
+   A) They have no name
+   B) Created without new
+   C) Cannot call methods
+   D) Stored permanently
+   Answer: A) They have no name
+
+8. What happens when an object no longer has any references pointing to it?
+   A) Compiler error occurs
+   B) Eligible for Garbage Collection
+   C) Program terminates immediately
+   D) Automatically cloned
+   Answer: B) Eligible for Garbage Collection
+
+9. Which operator is used to access members of a class through an object?
+   A) ->
+   B) .  (Dot operator)
+   C) ::
+   D) #
+   Answer: B) .  (Dot operator)
+
+10. Can a Java file contain multiple non-public classes?
+   A) Yes
+   B) No
+   C) Only if they are static
+   D) Only inside main method
+   Answer: A) Yes
+
+11. What is the return type of a Java constructor?
+   A) void
+   B) int
+   C) Same class type
+   D) Constructors have no return type
+   Answer: D) Constructors have no return type
+
+12. When is a default constructor provided by the compiler?
+   A) Always
+   B) When no constructors are defined
+   C) When class is public
+   D) When class is abstract
+   Answer: B) When no constructors are defined
+
+13. Which keyword calls a constructor from another constructor in the same class?
+   A) super()
+   B) this()
+   C) extent()
+   D) new()
+Java Core MCQs — Examination Paper
+Page 1 of 8
+   Answer: B) this()
+
+14. Where must this()  or super()  be placed inside a constructor?
+   A) Anywhere
+   B) First statement only
+   C) Last statement
+   D) Inside a try block
+   Answer: B) First statement only
+
+15. Can a constructor be marked as final ?
+   A) Yes
+   B) No
+   C) Only if private
+   D) Only in abstract classes
+   Answer: B) No
+
+16. What is Constructor Overloading?
+   A) Same parameters, different name
+   B) Multiple constructors with different parameters
+   C) Overriding parent constructor
+   D) Making a constructor private
+   Answer: B) Multiple constructors with different parameters
+
+17. Which constructor is called when executing Demo d = new Demo(5); ?
+   A) Default constructor
+   B) Parameterized constructor
+   C) Copy constructor
+   D) Static constructor
+   Answer: B) Parameterized constructor
+
+18. What happens if a class defines only a parameterized constructor and you call new Demo() ?
+   A) Runs successfully
+   B) Compilation error
+   C) Runtime exception
+   D) Returns null
+   Answer: B) Compilation error
+
+19. Can a constructor be declared private ?
+   A) No, causes syntax error
+   B) Yes, prevents external instantiation
+   C) Yes, but cannot run code
+   D) Only in interfaces
+   Answer: B) Yes, prevents external instantiation
+
+20. What is the primary purpose of a constructor?
+   A) Destroy objects
+   B) Initialize instance variables
+   C) Allocate heap space only
+   D) Import packages
+   Answer: B) Initialize instance variables
+
+21. What is Encapsulation in Java?
+   A) Inheriting properties from parent
+   B) Wrapping data and methods into a single unit
+   C) Executing multiple forms of methods
+   D) Creating multiple classes in one file
+   Answer: B) Wrapping data and methods into a single unit
+
+22. How do you achieve full encapsulation in a class?
+   A) Make variables public
+   B) Make variables private & provide getters/setters
+   C) Make methods private
+   D) Extend Java's Object class
+   Answer: B) Make variables private & provide getters/setters
+
+23. Which access modifier restricts variable access to its own class only?
+   A) protected
+   B) public
+   C) default
+   D) private
+   Answer: D) private
+
+24. What is a read-only encapsulated class?
+   A) Class with only setter methods
+   B) Class with only getter methods
+   C) Class with private methods
+   D) Class declared as final
+   Answer: B) Class with only getter methods
+
+25. What is the conventional return type of a Setter method for a field age ?
+   A) int
+   B) boolean
+   C) void
+   D) String
+   Answer: C) void
+
+26. Which of the following is a key benefit of encapsulation?
+   A) Increased execution speed
+   B) Data hiding and control over validation
+   C) Automatic memory cleanup
+   D) Prevents compilation errors
+   Answer: B) Data hiding and control over validation
+
+27. What happens if a public getter method returns a reference to a mutable private object?
+   A) Encapsulation may be compromised
+   B) Compiler error
+   C) Runtime NullPointerException
+   D) Memory leak
+   Answer: A) Encapsulation may be compromised
+
+28. Which component is encapsulated in a typical Java Bean class?
+   A) Only static variables
+   B) Private fields with public getters/setters
+   C) Public fields only
+   D) Abstract methods
+Java Core MCQs — Examination Paper
+Page 2 of 8
+   Answer: B) Private fields with public getters/setters
+
+29. What access modifier is applied when no keyword is specified for a field?
+   A) private
+   B) protected
+   C) Package-private (default)
+   D) public
+   Answer: C) Package-private (default)
+
+30. Can getter and setter methods be declared as static  for instance fields?
+   A) Yes
+   B) No, instance fields require non-static methods
+   C) Only getter methods
+   D) Only setter methods
+   Answer: B) No, instance fields require non-static methods
+
+31. What defines a method signature in Java?
+   A) Return type + Method name
+   B) Method name + Parameter list
+   C) Access modifier + Name
+   D) Exceptions + Return type
+   Answer: B) Method name + Parameter list
+
+32. Can Method Overloading be achieved by changing ONLY the return type?
+   A) Yes
+   B) No, causes compilation error
+   C) Yes, at runtime
+   D) Only if return type is void
+   Answer: B) No, causes compilation error
+
+33. Which keyword is used to pass variable arguments to a method?
+   A) args...
+   B) varargs
+   C) Ellipsis ...
+   D) Array brackets []
+   Answer: C) Ellipsis ...
+
+34. What is the return type of a method that does not return any value?
+   A) null
+   B) void
+   C) empty
+   D) static
+   Answer: B) void
+
+35. Can a static  method access non-static instance fields directly?
+   A) Yes
+   B) No, requires an object reference
+   C) Yes, if in same package
+   D) Yes, if fields are public
+   Answer: B) No, requires an object reference
+
+36. What is method overriding?
+   A) Same method in same class
+   B) Subclass redefining superclass method
+   C) Calling private method
+   D) Changing parameter count
+   Answer: B) Subclass redefining superclass method
+
+37. Which keyword prevents a method from being overridden?
+   A) static
+   B) const
+   C) final
+   D) abstract
+   Answer: C) final
+
+38. What parameter list does public static void main  accept?
+   A) String args
+   B) String[] args
+   C) Object[] args
+   D) int[] args
+   Answer: B) String[] args
+
+39. What happens if a method calls itself endlessly without a base condition?
+   A) OutOfMemoryError
+   B) StackOverflowError
+   C) InfiniteLoopException
+   D) NullPointerException
+   Answer: B) StackOverflowError
+
+40. Can abstract methods have a body inside an abstract class?
+   A) Yes
+   B) No
+   C) Only if static
+   D) Only if final
+
+   Answer: B) No
+
+41. Where are local variables created in memory?
+   A) Heap Memory
+   B) Stack Memory
+   C) Method Area
+   D) Code Segment
+   Answer: B) Stack Memory
+
+42. What is the default value of an uninitialized local variable of type int ?
+   A) 0
+   B) null
+   C) No default value (causes error)
+   D) Garbage value
+   Answer: C) No default value (causes error)
+
+43. Which modifier CANNOT be applied to a local variable?
+   A) final
+   B) public
+   C) Both A and B
+   D) None of the above
+   Answer: B) public
+
+44. Instance variables are declared inside a class but outside of what?
+   A) Package
+   B) Any method, constructor, or block
+   C) Imports
+   D) Interface
+   Answer: B) Any method, constructor, or block
+
+45. What is the lifetime of a static (class) variable?
+   A) Until method finishes
+   B) As long as the class is loaded
+   C) Until object is dereferenced
+   D) 5 seconds
+   Answer: B) As long as the class is loaded
+
+46. What happens when a local variable has the same name as an instance variable?
+   A) Compiler Error
+   B) Variable Shadowing
+   C) Instance variable overrides local
+   D) Garbage collection triggers
+   Answer: B) Variable Shadowing
+
+47. How do you access a shadowed instance variable x  inside a method?
+   A) this.x
+   B) super.x
+   C) x.this
+   D) local.x
+   Answer: A) this.x
+
+48. Where are static variables stored in memory?
+   A) Call Stack
+   B) Metaspace / Method Area
+   C) Register
+   D) Heap Root
+   Answer: B) Metaspace / Method Area
+
+49. What is the default value of an uninitialized instance variable of type boolean ?
+   A) true
+   B) false
+   C) 0
+   D) null
+   Answer: B) false
+
+50. Which keyword is used to declare a constant variable in Java?
+   A) const
+   B) constant
+   C) final
+   D) static
+   Answer: C) final
+
+51. What must be the evaluation type of the condition inside an if()  statement?
+   A) int  (0 or 1)
+   B) boolean
+   C) Any numeric type
+   D) String
+   Answer: B) boolean
+
+52. Which of the following primitive types CANNOT be used in a standard switch  expression?
+   A) int
+   B) char
+   C) double
+   D) byte
+   Answer: C) double
+
+53. What occurs if a switch  case lacks a break  statement?
+   A) Compilation error
+   B) Fall-through to subsequent cases
+   C) Program halts immediately
+   D) Default case is skipped
+   Answer: B) Fall-through to subsequent cases
+
+54. Is the default  case mandatory inside a switch  block?
+   A) Yes
+   B) No
+   C) Only if cases are missing
+   D) Only for String switches
+
+   Answer: B) No
+
+55. What is the result of (5 > 3) ? "Yes" : "No" ?
+   A) "Yes"
+   B) "No"
+   C) true
+   D) Compilation Error
+   Answer: A) "Yes"
+
+56. Which operator represents Logical AND in an if  condition?
+   A) &
+   B) &&
+   C) AND
+   D) |
+   Answer: B) &&
+
+57. Can duplicate case  values exist within the same switch  block?
+   A) Yes
+   B) No, results in compile error
+   C) Yes, if different types
+   D) Only in enum switches
+   Answer: B) No, results in compile error
+
+58. Starting from Java 7, which object type can be used in a switch  statement?
+   A) StringBuffer
+   B) String
+   C) Double
+   D) ArrayList
+   Answer: B) String
+
+59. What executes if no case  matches and no default  is provided in a switch?
+   A) Exception thrown
+   B) Nothing executes; exits switch
+   C) First case runs
+   D) Infinite loop
+   Answer: B) Nothing executes; exits switch
+
+60. What is the output of if(false); else System.out.print("OK"); ?
+   A) Prints nothing
+   B) Prints OK
+   C) Compile Error
+   D) Runtime Error
+   Answer: B) Prints OK
+
+61. Which loop is guaranteed to execute its body at least once?
+   A) for  loop
+   B) while  loop
+   C) do-while  loop
+   D) Enhanced for  loop
+   Answer: C) do-while  loop
+
+62. What is the output of for(int i=0; i<3; i++);  after execution?
+   A) i = 0
+   B) Loop runs 3 times doing nothing
+   C) Infinite loop
+   D) Compile error
+   Answer: B) Loop runs 3 times doing nothing
+
+63. Which statement immediately terminates the innermost loop?
+   A) continue
+   B) exit
+   C) break
+   D) skip
+   Answer: C) break
+
+64. What does the continue  statement do inside a loop?
+   A) Stops the loop entirely
+   B) Skips current iteration and moves to next
+   C) Restarts the loop from 0
+   D) Exits the program
+   Answer: B) Skips current iteration and moves to next
+
+65. What is another name for the enhanced for  loop in Java?
+   A) Iterator loop
+   B) For-Each loop
+   C) Index loop
+   D) Dynamic loop
+   Answer: B) For-Each loop
+
+66. Which part of a for(init; cond; update)  header is optional?
+   A) Init only
+   B) Cond only
+   C) Update only
+   D) All parts are optional
+   Answer: D) All parts are optional
+
+67. What creates an infinite loop structure using for ?
+   A) for(;;)
+   B) for(true)
+   C) for(inf)
+   D) for(0)
+   Answer: A) for(;;)
+
+68. What happens if the condition in a while  loop is initially false ?
+   A) Runs once
+   B) Code inside block never executes
+   C) Compilation Error
+   D) Runtime Error
+   Answer: B) Code inside block never executes
+
+69. How do labeled break  statements behave in nested loops?
+   A) Syntax Error
+   B) Breaks out of the specific labeled outer loop
+   C) Breaks all loops in program
+   D) Resets iteration counter
+
+
+   Answer: B) Breaks out of the specific labeled outer loop
+
+70. Can an enhanced for  loop modify elements of a primitive array directly?
+   A) Yes
+   B) No, it uses a local copy of element
+   C) Only if elements are positive
+   D) Only with wrapper classes
+   Answer: B) No, it uses a local copy of element
+
+71. What is the scope of a variable declared inside the initialization block of a for  loop?
+   A) Global
+   B) Entire Class
+   C) Only within the loop
+   D) Outer method
+   Answer: C) Only within the loop
+
+72. How many times will int i=5; while(i>0){ i--; }  iterate?
+   A) 4 times
+   B) 5 times
+   C) 6 times
+   D) Infinite
+   Answer: B) 5 times
+
+73. What syntax ends a do-while  block?
+   A) while(cond)
+   B) while(cond);  (with semicolon)
+   C) end while;
+   D) until(cond)
+   Answer: B) while(cond);  (with semicolon)
+
+74. Can a boolean  variable be used as a loop condition?
+   A) Yes
+   B) No
+   C) Only in do-while
+   D) Only if constant
+   Answer: A) Yes
+
+75. Which loop structure is best when total iteration count is known beforehand?
+   A) while
+   B) do-while
+   C) Standard for
+   D) Infinite loop
+   Answer: C) Standard for
+
+76. Which package contains the Scanner  class?
+   A) java.lang
+   B) java.io
+   C) java.util
+   D) java.net
+   Answer: C) java.util
+
+77. How do you instantiate Scanner  for console input reading?
+   A) new Scanner(System.out)
+   B) new Scanner(System.in)
+   C) Scanner.create()
+   D) new Scanner(File)
+   Answer: B) new Scanner(System.in)
+
+78. Which method of Scanner  reads an entire line of text including spaces?
+   A) next()
+   B) nextLine()
+   C) readString()
+   D) getText()
+   Answer: B) nextLine()
+
+79. What method reads the next single token/word up to whitespace?
+   A) next()
+   B) nextLine()
+   C) nextChar()
+   D) readWord()
+   Answer: A) next()
+
+80. Which exception occurs if nextInt()  receives a input value like "abc" ?
+   A) NumberFormatException
+   B) InputMismatchException
+   C) IOException
+   D) NullPointerException
+   Answer: B) InputMismatchException
+
+81. How do you close a Scanner  instance named sc ?
+   A) sc.stop()
+   B) sc.close()
+   C) sc.delete()
+   D) sc.finalize()
+   Answer: B) sc.close()
+
+82. Which method checks if there is another integer available to read?
+   A) hasNextInt()
+   B) checkInt()
+   C) isNextInt()
+   D) existInt()
+   Answer: A) hasNextInt()
+
+83. What happens when nextLine()  is called immediately after nextInt() ?
+   A) Reads next integer
+   B) Reads leftover newline character \n
+   C) Throws error
+   D) Clears buffer
+   Answer: B) Reads leftover newline character \n
+
+84. Does Scanner  directly support a nextChar()  method?
+   A) Yes
+   B) No, use next().charAt(0)
+   C) Yes, via readChar()
+   D) Only in Java 17+
+Java Core MCQs — Examination Paper
+Page 6 of 8
+   Answer: B) No, use next().charAt(0)
+
+85. What parameter in new Scanner(System.in)  represents standard input?
+   A) System.in
+   B) System.out
+   C) System.err
+   D) Console
+   Answer: A) System.in
+
+86. Which keyword indicates that a variable belongs to the class rather than an object?
+   A) instance
+   B) static
+   C) shared
+   D) native
+   Answer: B) static
+
+87. What is the size of an int  variable in Java?
+   A) 2 bytes
+   B) 4 bytes (32 bits)
+   C) 8 bytes
+   D) Depends on OS
+   Answer: B) 4 bytes (32 bits)
+
+88. What is the root class of all classes in Java?
+   A) java.lang.Root
+   B) java.lang.Object
+   C) java.lang.Class
+   D) java.lang.Base
+   Answer: B) java.lang.Object
+
+89. Which of the following is NOT a Java keyword?
+   A) static
+   B) boolean
+   C) void
+   D) main
+   Answer: D) main
+
+90. What is the standard extension of compiled Java bytecode files?
+   A) .java
+   B) .class
+   C) .exe
+   D) .obj
+   Answer: B) .class
+
+91. Which component executes Java Bytecode?
+   A) JDK
+   B) JVM (Java Virtual Machine)
+   C) JAVAC
+   D) IDE
+   Answer: B) JVM (Java Virtual Machine)
+
+92. What is explicit casting in Java?
+   A) Automatic conversion
+   B) Narrowing conversion using (type)
+   C) String conversion
+   D) Object creation
+   Answer: B) Narrowing conversion using (type)
+
+93. What is the result of 10 / 4  using integer division in Java?
+   A) 2.5
+   B) 2
+   C) 3
+   D) Compile error
+   Answer: B) 2
+
+94. What is the result of 10 % 3  in Java?
+   A) 3
+   B) 1
+   C) 0
+   D) 3.33
+   Answer: B) 1
+
+95. What does the this  keyword represent?
+   A) Current class object reference
+   B) Parent class instance
+   C) Static method reference
+   D) Global scope
+   Answer: A) Current class object reference
+
+96. Which operator tests if an object is an instance of a specific class?
+   A) isinstance
+   B) typeof
+   C) instanceof
+   D) type
+   Answer: C) instanceof
+
+97. Can a class be declared static  in Java?
+   A) Top-level classes can
+   B) Only nested/inner classes can
+   C) No classes can
+   D) All classes are static
+   Answer: B) Only nested/inner classes can
+
+98. What is the default boolean value of an array element boolean[] arr = new boolean[1]; ?
+   A) true
+   B) false
+   C) null
+   D) 0
+   Answer: B) false
+
+99. How is a single-line comment written in Java?
+   A) # Comment
+   B) // Comment
+   C) <!-- Comment -->
+   D) /* Comment */
+
+
+   Answer: B) // Comment
+
+100. Which block always executes after a try-catch block regardless of exceptions?
+   A) catch
+   B) final
+   C) finally
+   D) static
+   Answer: C) finally
