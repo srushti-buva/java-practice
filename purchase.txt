@@ -1,0 +1,121 @@
+
+
+package com.tka;
+
+public class Shopping {
+
+    double price = 500;
+
+    
+    void purchase(int productId) {
+        int quantity = 1;
+        double total = price * quantity;
+
+        System.out.println("Product ID : " + productId);
+        System.out.println("Quantity : " + quantity);
+        System.out.println("Total Amount : " + total);
+    }
+
+ 
+    void purchase(int productId, int quantity) {
+        double total = price * quantity;
+
+        System.out.println("Product ID : " + productId);
+        System.out.println("Quantity : " + quantity);
+        System.out.println("Total Amount : " + total);
+    }
+
+
+    void purchase(int productId, int quantity, double discountPercentage) {
+        double total = price * quantity;
+        double discount = total * discountPercentage / 100;
+        double finalAmount = total - discount;
+
+        System.out.println("Product ID : " + productId);
+        System.out.println("Quantity : " + quantity);
+        System.out.println("Discount : " + discountPercentage + "%");
+        System.out.println("Total Amount : " + total);
+        System.out.println("Discount Amount : " + discount);
+        System.out.println("Final Amount : " + finalAmount);
+    }
+
+   
+    void purchase(String productName, int quantity) {
+        double total = price * quantity;
+
+        System.out.println("Product Name : " + productName);
+        System.out.println("Quantity : " + quantity);
+        System.out.println("Total Amount : " + total);
+    }
+
+
+
+
+
+
+
+
+package com.tka1;
+
+public class MainClass {
+
+    public static void main(String[] args) {
+
+        Shopping s = new Shopping();
+
+        System.out.println("Purchase 1");
+        s.purchase(101);
+
+        System.out.println("\nPurchase 2");
+        s.purchase(102, 3);
+
+        System.out.println("\nPurchase 3");
+        s.purchase(103, 2, 10.0);
+
+        System.out.println("\nPurchase 4");
+        s.purchase("Laptop", 2);
+    }
+}
+
+
+
+public class Shopping{   
+    void purchase(int product_id){
+      System.out.println("Product Id :"+product_id);
+   }
+   void purchase(int product_id,int quantity){
+      System.out.println("Product Id :"+product_id);
+      System.out.println("Product Quantity :"+quantity);  
+  }
+  void purchase(int productId, int quantity, double discountPercentage){
+      System.out.println("Product Id :"+product_id);
+      System.out.println("Product Quantity :"+quantity); 
+      System.out.println("Product Discount Percentage :"+discountPercentage +); 
+         
+     
+     
+
+
+final Keyword
+Method Overriding 
+Runtime Polymorphisms
+Super Keyword
+Dyanmic displatch
+int a =20;
+Student a = new Student();
+these both are same and meaning of this both are same.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+public 
+}
