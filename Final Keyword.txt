@@ -1,0 +1,197 @@
+//Question 1
+
+class Payment{
+   int pay(){
+     return 100;
+   }
+}
+  
+
+class UPI extends Payment{
+    int pay(){
+       return 200;
+    }
+}
+
+
+
+//Question 2 
+
+public class Vehicle{
+   String start(){
+     return "Vehicle is Starting";
+   }
+
+
+public class Car extends Vehicle {
+     @Override
+     String start(){
+        return "Car is Starting";
+     }
+}
+
+public class Bike extends Vehicle{
+     @Override
+     String start(){
+        return "Bike is Starting";
+     }
+  
+}
+
+
+
+//Question 3 
+
+public class Employee{
+    int salary(){
+      return 5000;
+    }
+}
+
+
+public class Manager extends Employee{
+    @Override
+    int salary(){
+        return 8000;
+    }
+}
+
+
+public class Developer extends Employee{
+    @Override
+    int salary(){
+      return 7000;
+    }
+}
+
+
+
+///Question 4 
+public class Doctor{
+    int calculateFee(){
+      return 500;
+    }
+}
+
+
+public class Cardiologiest extends Doctor{
+      @Override
+      int calculatefee(){
+         return 800;
+      }
+
+
+public class Dentist extends Doctor{
+     @Override
+     int calculatefee(){
+        return 1500;
+     }
+}
+
+
+public class Dermatologist extends Doctor{
+     @Override
+     int calculatefee(){
+         return 1000;
+     }
+}
+
+   
+public class MainClass{
+    public static void main(String args[]){
+       ///Dynamic Method Dispatch 
+       Payment p = new UPI();
+       System.out.println(p.pay());
+       //Prints 200
+
+
+    //Question2
+    Vehicle v = new Car();
+    System.out.println(v.start());
+    Vehicle v = new Bike();
+    System.out.println("Bike is Starting");
+
+   //Question 3
+   Employee e ;
+   e=new Manager();
+   System.out.println(e.salary());
+   e=new Developer();
+   System.out.println(e.developer());
+   
+   
+   //Question 4
+   Doctor d ;
+   d = new Cardiologiest();
+   System.out.println(d.calculatefee());
+   d= new Dentist();
+   System.out.println(d.calculatefee());
+   d=new Dermatologiest();
+   System.out.println(d.calculatefee());
+    
+ 
+
+
+
+Level 1 – Basic
+Q1. Final Variable
+
+Create a class Student with:
+- A final variable rollNumber initialized to 101.
+- A normal variable name.
+- Create an object in MainClass and print the roll number and name.
+Concept: A final variable cannot be reassigned.
+
+Q2. Final Variable with Constructor
+
+Create a class Employee with:
+- A final variable employeeId.
+- Initialize employeeId inside the constructor.
+- A variable employeeName.
+- Display the employee ID and name using a method.
+Create two objects with different IDs.
+
+Concept: A blank final variable can be initialized through a constructor.
+Level 2 – Intermediate
+Q3. Final Method
+
+Create a parent class Vehicle with:
+- A method start() declared as final.
+- A method display() which is not final.
+Create a child class Car that inherits Vehicle.
+- Override the display() method.
+- Try to override the start() method.
+Concept: A final method cannot be overridden.
+
+Q4. Final Variable in a Real-World Example
+
+Create a class BankAccount with:
+- A final variable accountNumber.
+- A variable accountHolderName.
+- A variable balance.
+- Initialize the account number using a constructor.
+- Create a method to deposit money.
+- Create a method to display account details.
+Create an object and perform a deposit.
+Level 3 – Advanced Practice
+Q5. Final Class
+
+Create a final class named Payment.
+- Create a method makePayment() that prints "Payment completed successfully".
+- Create another class OnlinePayment.
+- Try to inherit Payment in OnlinePayment.
+Concept: A final class cannot be inherited.
+
+Q6. Combination of Final Variable, Final Method and Final Class
+
+Create the following:
+- A parent class Company with a final variable companyName = "TCS".
+- A final method companyPolicy() that prints company policy.
+- A normal method work() that prints "Employees are working".
+- A child class Employee that inherits Company.
+- Override the work() method.
+- Display the company name and call both methods.
+Concept: Understand where final can and cannot be used.
+
+
+    
+ 
